@@ -41,7 +41,7 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, p, dl, dd {
+body, h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -108,6 +108,7 @@ a {
   font: 700 23px/0.95 var(--display);
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .wordmark-mark {
@@ -366,6 +367,7 @@ h1 > span {
 
 .background-section,
 .timeline-section,
+.related-section,
 .sources-section {
   padding-block: clamp(58px, 6vw, 88px);
 }
@@ -482,16 +484,8 @@ q {
   text-decoration-thickness: 2px;
 }
 
-.citation,
-.citation-pending {
+.citation {
   font-size: 0.86em;
-}
-
-.citation-pending {
-  display: inline-block;
-  color: var(--muted);
-  font-weight: 750;
-  border-bottom: 1px dotted currentColor;
 }
 
 .analysis-note {
@@ -588,26 +582,22 @@ q {
   color: var(--cream);
 }
 
-.sources-section .section-header,
-.reference {
+.sources-section .section-header {
   border-color: #655046;
-}
-
-.sources-section .section-intro,
-.reference dd {
-  color: #ddc7b6;
 }
 
 .reference-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .reference {
-  padding: 18px 21px;
-  border-width: 1px;
-  border-style: solid;
+  padding: 16px clamp(15px, 2vw, 26px);
+  border: 1px solid #655046;
   border-radius: 4px;
   background: #2b201c;
   scroll-margin-top: 18px;
@@ -617,18 +607,18 @@ q {
   border-color: var(--red-light);
 }
 
-.reference dt {
-  color: var(--red-light);
-  font-family: var(--display);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.1;
+.reference p {
+  padding-inline-start: 1.4em;
+  text-indent: -1.4em;
+  overflow-wrap: anywhere;
+  font-size: 15px;
+  line-height: 1.65;
 }
 
-.reference dd {
-  margin-top: 6px;
-  font-size: 14px;
-  line-height: 1.6;
+.reference a {
+  color: var(--red-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-footer {
@@ -678,8 +668,7 @@ q {
       linear-gradient(90deg, rgb(33 25 22 / 81%) 24%, rgb(33 25 22 / 30%) 73%, rgb(33 25 22 / 12%));
   }
 
-  .context-grid,
-  .reference-list {
+  .context-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -834,6 +823,29 @@ q {
     gap: 13px;
     margin-bottom: 25px;
     padding-bottom: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .topbar {
+    gap: 8px;
+  }
+
+  .wordmark {
+    font-size: 16px;
+  }
+
+  .wordmark-mark {
+    width: 22px;
+    height: 22px;
+  }
+
+  .wordmark-mark::before {
+    top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
   }
 }
 

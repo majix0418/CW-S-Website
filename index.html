@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111613">
-    <meta name="description" content="CW’s portfolio of projects, experiments, and milestones.">
-    <title>CW — In the making</title>
-    <link rel="icon" href="./assets/compass.png" type="image/png">
-    <link rel="preload" href="./assets/mountain-vista.webp" as="image">
+    <meta name="theme-color" content="#211916">
+    <meta name="description" content="Cold War & Sports traces how the dispute over Olympic recognition for China and Taiwan affected athletes, international sports, and relations across the Taiwan Strait.">
+    <title>Cold War &amp; Sports</title>
+    <link rel="icon" href="./assets/track-icon.png" type="image/png">
+    <link rel="preload" href="./assets/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./styles.css">
     <script src="./main.js" defer></script>
   </head>
@@ -16,148 +16,432 @@
 
     <header class="site-header">
       <nav class="shell topbar" aria-label="Main navigation">
-        <a class="wordmark" href="#home" aria-label="CW, home">
+        <a class="wordmark" href="#home">
           <span class="wordmark-mark" aria-hidden="true"></span>
-          <span>CW<span class="wordmark-period">.</span></span>
+          <span>Cold War <span class="wordmark-sports">&amp; Sports</span></span>
         </a>
 
         <div class="nav-links">
-          <a class="nav-home" href="#home" data-section-link aria-current="location">Home</a>
+          <a class="nav-overview" href="#home" data-section-link aria-current="location">Overview</a>
+          <a href="#background" data-section-link>Background</a>
           <a href="#timeline" data-section-link>Timeline</a>
-          <a href="#projects" data-section-link>Projects</a>
+          <a href="#sources" data-section-link>Sources</a>
         </div>
-
-        <a class="header-contact" href="#contact" data-section-link>
-          <span class="contact-long">Get in touch</span>
-          <span class="contact-short">Contact</span>
-          <span class="arrow arrow-diagonal" aria-hidden="true"></span>
-        </a>
       </nav>
     </header>
 
     <main id="main" tabindex="-1">
       <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-mountains" aria-hidden="true"></div>
-        <div class="hero-forest" aria-hidden="true"></div>
+        <div class="hero-stadium" aria-hidden="true"></div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-sprinter"></div>
+        </div>
+
         <div class="shell hero-content">
-          <p class="hero-label">Personal portfolio</p>
-          <h1 id="hero-title">In the <span>making.</span></h1>
-          <p class="hero-intro">I’m CW. This is a record of what I build, what I try, and what I learn along the way.</p>
+          <p class="hero-label">China, Taiwan, and the Olympics</p>
+          <h1 id="hero-title">Cold War <span>&amp; Sports</span></h1>
+          <p class="research-question">How did the presence of two Chinas in the Olympics affect the sporting community and relations between the two countries?</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#timeline">
-              Explore timeline
+              Explore the timeline
               <span class="arrow arrow-down" aria-hidden="true"></span>
             </a>
-            <a class="button button-secondary" href="#projects">
-              View projects
+            <a class="button button-secondary" href="#background">
+              Read the background
               <span class="arrow" aria-hidden="true"></span>
             </a>
+          </div>
+        </div>
+        <p class="art-caption">Archive-inspired illustration</p>
+      </section>
+
+      <section class="background-section" id="background" aria-labelledby="background-title">
+        <div class="shell">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Background</p>
+              <h2 id="background-title">The 1949 split</h2>
+            </div>
+            <p class="section-intro"><strong>Source notes</strong> contain quotations and paraphrases. <strong>Analysis</strong> marks my interpretation. Some references are still being added.</p>
+          </div>
+
+          <div class="context-grid">
+            <article class="context-card" aria-labelledby="roc-title">
+              <p class="card-kicker">Taiwan / ROC</p>
+              <h3 id="roc-title">Republic of China</h3>
+              <div class="source-notes">
+                <h4>Source notes</h4>
+                <ul>
+                  <li>In 1949, as the Chinese Communist Party (CCP) prevailed in the civil war, the Chinese Nationalists (KMT) retreated to Taiwan. <span class="citation-pending">Citation pending</span></li>
+                  <li>Former Chinese Olympic Committee (COC) members were among those who fled with the Republic of China (ROC) government. <a class="citation" href="#source-chan">(Chan 473)</a></li>
+                  <li>The ROC retained China’s seat in the United Nations after its government moved to Taiwan. <span class="citation-pending">Citation pending</span></li>
+                </ul>
+              </div>
+              <div class="analysis-note">
+                <h4>Analysis</h4>
+                <ul>
+                  <li>Having former COC members gave the ROC an early advantage with the International Olympic Committee (IOC) over the newly established PRC.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="context-card" aria-labelledby="prc-title">
+              <p class="card-kicker">China / PRC</p>
+              <h3 id="prc-title">People’s Republic of China</h3>
+              <div class="source-notes">
+                <h4>Source notes</h4>
+                <ul>
+                  <li>The People’s Republic of China (PRC) was established on the mainland in 1949. <span class="citation-pending">Citation pending</span></li>
+                  <li>The China National Amateur Athletic Foundation remained in Nanjing after many sports delegates fled to Taiwan. <a class="citation" href="#source-chan">(Chan 474)</a></li>
+                  <li>In October 1949, it was reorganized as the All-China Athletic Federation and claimed jurisdiction over all Chinese Olympic activities. <a class="citation" href="#source-chan">(Chan 474)</a></li>
+                  <li>The PRC’s claim included Taiwan. It rejected recognition of a separate ROC and described the idea as an obstacle created by people hostile to the PRC. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                </ul>
+              </div>
+              <div class="analysis-note">
+                <h4>Analysis</h4>
+                <ul>
+                  <li>From the PRC’s perspective, recognizing both Olympic committees would divide the nation it claimed was united.</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
         <div class="shell">
-          <div class="section-heading">
-            <h2 id="timeline-title">The timeline<span>.</span></h2>
-            <p>A running record of the work so far.<br class="desktop-break"> Earlier entries are examples for now.</p>
+          <div class="section-header">
+            <div>
+              <p class="section-label">Timeline</p>
+              <h2 id="timeline-title">Who represents China?</h2>
+            </div>
+            <p class="section-intro">The dispute played out in invitations, withdrawals, votes, and decisions about the names and symbols athletes could compete under.</p>
           </div>
 
           <ol class="timeline" role="list">
-            <li class="milestone milestone-current">
-              <time datetime="2026-11">Nov 2026</time>
-              <article class="milestone-card">
-                <div class="milestone-heading">
-                  <h3>Portfolio kickoff</h3>
-                  <span class="status">In progress</span>
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1952">1952</time>
+              <article class="timeline-card">
+                <p class="card-kicker">Helsinki Olympics</p>
+                <h3>Participation becomes a political question</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>The PRC regarded the main obstacle to China’s participation in the 1952 Olympic Games as essentially political. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                  </ul>
                 </div>
-                <p>Started building this one-page portfolio and a timeline I can add to as I go.</p>
               </article>
             </li>
-            <li class="milestone">
-              <time datetime="2026-08">Aug 2026</time>
-              <article class="milestone-card">
-                <h3>A tool for the everyday</h3>
-                <p>A small side project that turns a repetitive task into something easier to do.</p>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1954">1954</time>
+              <article class="timeline-card">
+                <p class="card-kicker">May · Athens</p>
+                <h3>The IOC recognizes both committees</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>At its 50th session in Athens, the IOC voted 23–21 to recognize the National Olympic Committees (NOCs) in Beijing and Taipei. <a class="citation" href="#source-peoples-republic">(People’s Republic)</a></li>
+                    <li>The IOC recognized Beijing’s body as the <q>Olympic Committee of the Chinese Republic</q> and Taipei’s as the <q>Chinese Olympic Committee</q>. In 1957, the IOC listed Beijing’s body as the <q>Olympic Committee of the People’s Democratic Republic of China</q>. <a class="citation" href="#source-peoples-republic">(People’s Republic)</a></li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-card timeline-card-right">
+                <p class="card-kicker">PRC response</p>
+                <h3>Beijing objects to dual recognition</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>In discussions with the IOC, the PRC emphasized Chinese unity and called the IOC’s actions a <q>sheer plot to create ‘two Chinas’</q>. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                  </ul>
+                </div>
               </article>
             </li>
-            <li class="milestone">
-              <time datetime="2026-04">Apr 2026</time>
-              <article class="milestone-card">
-                <h3>Taking an idea to prototype</h3>
-                <p>A first pass at an idea, with notes on what worked and what to change next.</p>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1955">1955</time>
+              <article class="timeline-card timeline-card-right">
+                <h3>What counts as politics?</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>According to the PRC’s account, an IOC representative argued that the issue the PRC was protesting had nothing to do with sports. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                    <li>The PRC portrayed his argument as unreasonable and hypocritical. It responded, <q>Actually, he was playing a most dirty political trick himself under the cloak of ‘apolitics,’ which made it all the more deceitful</q>. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The PRC’s wording shifted blame to the IOC. Its response made a political grievance central to a dispute about Olympic participation.</li>
+                  </ul>
+                </div>
               </article>
             </li>
-            <li class="milestone">
-              <time datetime="2025-10">Oct 2025</time>
-              <article class="milestone-card">
-                <h3>Learning in public</h3>
-                <p>A short write-up that explains a new concept through a practical example.</p>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1956">1956</time>
+              <article class="timeline-card">
+                <p class="card-kicker">November · Melbourne</p>
+                <h3>An invitation ends in a withdrawal</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>Beijing’s NOC accepted its invitation on November 20. Taipei’s NOC then declined, reversed its decision, and chose to compete. Beijing withdrew in protest. <a class="citation" href="#source-peoples-republic">(People’s Republic)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The exchange shows how each committee’s decision depended on what the other did. Taipei ultimately agreed to compete alongside Beijing, and Beijing chose to withdraw.</li>
+                  </ul>
+                </div>
               </article>
             </li>
-            <li class="milestone">
-              <time datetime="2025-02">Feb 2025</time>
-              <article class="milestone-card">
-                <h3>A first collaboration</h3>
-                <p>Working through an idea with someone else, from the first sketch to a shared result.</p>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1958">1958</time>
+              <article class="timeline-card timeline-card-right">
+                <h3>The PRC committee breaks with the IOC</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>The PRC’s Chinese Olympic Committee severed relations with the IOC in 1958, as described in the <a class="inline-link" href="#retrospective">2020 account</a>. <a class="citation" href="#source-ioc">(International Olympic Committee)</a></li>
+                  </ul>
+                </div>
               </article>
             </li>
-            <li class="milestone">
-              <time datetime="2024">2024</time>
-              <article class="milestone-card">
-                <h3>Getting started</h3>
-                <p>The first experiments with building for the web.</p>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1962">1962</time>
+              <article class="timeline-card">
+                <p class="card-kicker">Summer · Fourth Asian Games</p>
+                <h3>Indonesia rejects the ROC name</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>Indonesia, the host of the Fourth Asian Games, refused to invite Taiwan under the name <q>Republic of China</q>. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                    <li>The PRC described its effort as breaking a <q>blockade</q>. <a class="citation" href="#source-two-chinas">(“‘Two Chinas’”)</a></li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1971">1971</time>
+              <article class="timeline-card timeline-card-right">
+                <p class="card-kicker">October · United Nations</p>
+                <h3>The PRC takes China’s UN seat</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>The PRC took China’s seat at the United Nations, replacing the ROC’s representatives. <a class="citation" href="#source-chan">(Chan 475)</a></li>
+                    <li>After the change, Beijing regarded its existing relationship with the IOC as abnormal and unjust because the PRC now held the UN seat. <a class="citation" href="#source-chan">(Chan 474)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The change gave the PRC greater international recognition and more leverage in discussions with the IOC.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1972">1972</time>
+              <article class="timeline-card">
+                <p class="card-kicker">August · Munich</p>
+                <h3>Beijing declines an observer invitation</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>The organizers of the 20th Olympics sought to invite an observer delegation from the PRC. The PRC declined because the ROC was participating. <a class="citation" href="#source-chan">(Chan 476)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>Beijing gave up an opportunity to build ties in order to oppose a two-Chinas arrangement.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1973">1973</time>
+              <article class="timeline-card timeline-card-right">
+                <h3>The Asian Games Federation admits the PRC</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>After the PRC expanded its international ties, the Asian Games Federation’s executive committee decided to admit the PRC and deny the ROC. <a class="citation" href="#source-chan">(Chan 476)</a></li>
+                    <li>The IOC refrained from acting, concerned about alienating members of the Olympic movement who favored PRC participation. <a class="citation" href="#source-chan">(Chan 474)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The IOC’s earlier recognition of both committees came under pressure. For many supporters of PRC participation, recognizing the PRC meant excluding the ROC.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1975">1975</time>
+              <article class="timeline-card">
+                <h3>Beijing builds support across sports federations</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>By 1975, the PRC belonged to nine international sports federations. <span class="citation-pending">Citation pending</span></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>Those memberships helped position the PRC to rejoin the IOC.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1976">1976</time>
+              <article class="timeline-card timeline-card-right">
+                <p class="card-kicker">Montreal Olympics</p>
+                <h3>Canada restricts Taiwan’s competition name</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>After considering the PRC’s request to deny the ROC entry, Canada required Taiwanese athletes to compete without using the name <q>China</q>. <a class="citation" href="#source-chan">(Chan 478)</a></li>
+                    <li>The United States considered boycotting the Olympics over Taiwan’s treatment and ultimately chose to participate. <a class="citation" href="#source-chan">(Chan 478)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>Canada’s decision showed the PRC’s growing influence with host countries.</li>
+                    <li>The U.S. decision showed the limits of the support Taiwan could expect from a longtime ally.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1979">1979</time>
+              <article class="timeline-card">
+                <p class="card-kicker">April</p>
+                <h3>The IOC maintains recognition of both committees</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>Citing the Olympic spirit and the Olympic Charter, the IOC resolved to recognize the Chinese Olympic Committee in Beijing (then Peking) and maintain recognition of the Chinese Olympic Committee in Taipei. <a class="citation" href="#source-peoples-republic">(People’s Republic)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The IOC appeared to maintain a neutral position by recognizing both. The shared name left open which committee would represent China and what status the other would hold.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-card timeline-card-right">
+                <p class="card-kicker">Later in 1979</p>
+                <h3>The Chinese Taipei formula</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>The IOC voted to recognize the Chinese Olympic Committee and the Chinese Taipei Olympic Committee, with both entitled to participate in Olympic activities. <a class="citation" href="#source-chan">(Chan 481)</a></li>
+                    <li>The Chinese Taipei Olympic Committee had to submit a new flag, anthem, and emblem for IOC approval by January 1980. <a class="citation" href="#source-chan">(Chan 481)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>The naming decision favored the PRC’s claim to represent China and limited the name and symbols under which Taiwan’s athletes could compete.</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="timeline-row">
+              <time class="timeline-year" datetime="1988">1988</time>
+              <article class="timeline-card">
+                <p class="card-kicker">July</p>
+                <h3>Taiwan allows athletes to compete in China</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>Taiwan’s government decided its athletes could compete in China under IOC regulations and left those decisions to its national Olympic committee. <span class="citation-pending">Citation pending</span></li>
+                  </ul>
+                </div>
+                <!-- Unfinished analysis from the draft: In contrast with the PRC’s repeated protests… -->
+              </article>
+            </li>
+
+            <li class="timeline-row" id="retrospective">
+              <time class="timeline-year" datetime="2020">2020</time>
+              <article class="timeline-card timeline-card-right">
+                <p class="card-kicker">Retrospective</p>
+                <h3>Beijing looks back at the 1958 break</h3>
+                <div class="source-notes">
+                  <h4>Source notes</h4>
+                  <ul>
+                    <li>In the 2020 account, the PRC attributed its 1958 break with the IOC to what it called a <q>mistake</q> in recognizing a body it described as a local Chinese organization. <a class="citation" href="#source-ioc">(International Olympic Committee)</a></li>
+                    <li>The PRC argued that the Taiwan committee should use the name <q>Chinese Taipei Olympic Committee</q>. <a class="citation" href="#source-ioc">(International Olympic Committee)</a></li>
+                  </ul>
+                </div>
+                <div class="analysis-note">
+                  <h4>Analysis</h4>
+                  <ul>
+                    <li>Calling the decision a <q>mistake</q> sounds more restrained than the pressure the PRC applied when tensions were highest.</li>
+                    <li>The position behind the language stayed consistent. The PRC maintained its claim that Taiwan was part of one China.</li>
+                  </ul>
+                </div>
               </article>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <section class="sources-section" id="sources" aria-labelledby="sources-title">
         <div class="shell">
-          <div class="section-heading">
-            <h2 id="projects-title">Projects<span>.</span></h2>
+          <div class="section-header">
+            <h2 id="sources-title">Sources</h2>
+            <p class="section-intro">The notes use these short citations while the full bibliography is in progress.</p>
           </div>
-          <article class="project-card">
-            <div class="project-preview" aria-hidden="true">
-              <div class="preview-window">
-                <div class="preview-toolbar"><i></i><i></i><i></i></div>
-                <div class="preview-content">In the <span>making.</span></div>
-              </div>
+          <dl class="reference-list">
+            <div class="reference" id="source-chan">
+              <dt>Chan</dt>
+              <dd>Pages 473, 474, 475, 476, 478, and 481.</dd>
             </div>
-            <div class="project-info">
-              <h3>CW Portfolio</h3>
-              <p>A single-page home for my work and milestones, built with HTML, CSS, and JavaScript for GitHub Pages.</p>
-              <a class="text-link" href="https://github.com/majix0418/CW-S-Website">
-                View repository
-                <span class="arrow arrow-diagonal" aria-hidden="true"></span>
-              </a>
+            <div class="reference" id="source-two-chinas">
+              <dt>“‘Two Chinas’”</dt>
+              <dd>PRC accounts of Olympic recognition, discussions with the IOC, and the 1962 Asian Games.</dd>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="shell contact-content">
-          <div>
-            <h2 id="contact-title">Get in touch<span>.</span></h2>
-            <p>Find me and my work on GitHub.</p>
-          </div>
-          <a class="button button-primary" href="https://github.com/majix0418">
-            GitHub profile
-            <span class="arrow arrow-diagonal" aria-hidden="true"></span>
-          </a>
+            <div class="reference" id="source-peoples-republic">
+              <dt>People’s Republic</dt>
+              <dd>IOC recognition votes and Olympic invitations in 1954, 1956, and 1979.</dd>
+            </div>
+            <div class="reference" id="source-ioc">
+              <dt>International Olympic Committee</dt>
+              <dd>The 2020 account of the PRC’s 1958 break with the IOC and the name Chinese Taipei.</dd>
+            </div>
+          </dl>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="shell footer-content">
-        <a class="wordmark" href="#home" aria-label="CW, home">
+        <a class="wordmark" href="#home">
           <span class="wordmark-mark" aria-hidden="true"></span>
-          <span>CW<span class="wordmark-period">.</span></span>
+          <span>Cold War <span class="wordmark-sports">&amp; Sports</span></span>
         </a>
-        <a class="text-link" href="#home">
+        <a class="back-to-top" href="#home">
           Back to top
           <span class="arrow arrow-up" aria-hidden="true"></span>
         </a>

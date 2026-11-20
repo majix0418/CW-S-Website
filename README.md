@@ -1,6 +1,6 @@
-# CW Portfolio
+# Cold War & Sports
 
-A one-page portfolio with a layered landscape hero, anchor navigation, and a vertical timeline. The site runs with HTML, CSS, and JavaScript and has no build step.
+A one-page research site about the Olympic recognition dispute between the PRC and ROC. It uses plain HTML, CSS, and JavaScript.
 
 ## Preview locally
 
@@ -10,12 +10,14 @@ Run from the repository root and open [http://localhost:4173](http://localhost:4
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-## Edit the portfolio
+## Edit the research notes
 
-- Update the introduction, timeline, projects, and contact link in `index.html`. The portfolio kickoff is the first real entry. The earlier entries are examples.
-- Replace `assets/mountain-vista.webp` and `assets/forest-ridge.webp` to change the two hero backgrounds. The foreground image uses transparency above its treeline.
-- Adjust the palette and spacing in `styles.css`. Manrope is bundled under its [Open Font License](assets/manrope-OFL.txt).
+- Edit the research question, background, timeline, and source notes in `index.html`.
+- Add each event as a `timeline-row` with a year and a `timeline-card`. Use `timeline-card-right` for an entry on the right. Two cards in the same row share a year and stack in reading order on smaller screens.
+- Keep quotations and paraphrases under `Source notes`. Put interpretation in the separate `Analysis` block. Inline short citations link to the source list.
+- The bibliography and some inline citations are still in progress. The stadium and sprinter are archive-inspired illustrations.
+- Manrope and Barlow Condensed are bundled under their [Manrope Open Font License](assets/manrope-OFL.txt) and [Barlow Open Font License](assets/barlow-OFL.txt).
 
-## Publish with GitHub Pages
+## GitHub Pages
 
-Push the site to `main`, then open the repository’s **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, and save. When the deployment finishes, the site will be at [majix0418.github.io/CW-S-Website/](https://majix0418.github.io/CW-S-Website/).
+The site deploys from `main` and `/(root)`. Check **Actions → pages build and deployment** for the status of each update. [Published site](https://majix0418.github.io/CW-S-Website/)

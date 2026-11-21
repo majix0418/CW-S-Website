@@ -12,7 +12,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 ## Edit the research notes
 
-- Edit the research question, background, timeline, and source notes in `index.html`.
+- Edit the research question, thesis, background, timeline, and source notes in `index.html`.
 - Add each event as a `timeline-row` with a year and a `timeline-card`. Use `timeline-card-right` for an entry on the right. Two cards in the same row share a year and stack in reading order on smaller screens.
 - Keep quotations and paraphrases under `Source notes`. Put interpretation in the separate `Analysis` block. Inline short citations link to the source list.
 - The Works Cited section lists full references. The stadium and sprinter are archive-inspired illustrations.

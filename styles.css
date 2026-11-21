@@ -365,9 +365,34 @@ h1 > span {
   font-weight: 700;
 }
 
+.thesis-section {
+  padding-block: clamp(34px, 4.8vw, 66px);
+  border-bottom: 1px solid var(--line);
+  background: #f4e6da;
+}
+
+.thesis-content {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(0, 5fr);
+  align-items: start;
+  gap: clamp(14px, 4vw, 48px);
+  padding-inline-start: clamp(16px, 3vw, 32px);
+  border-inline-start: 3px solid var(--red);
+}
+
+.thesis-content h2 {
+  color: var(--red);
+  font-size: clamp(32px, 4vw, 54px);
+}
+
+.thesis-content p {
+  max-width: 64ch;
+  font: clamp(19px, 1.75vw, 24px)/1.5 Georgia, serif;
+  text-wrap: pretty;
+}
+
 .background-section,
 .timeline-section,
-.related-section,
 .sources-section {
   padding-block: clamp(58px, 6vw, 88px);
 }
@@ -823,6 +848,10 @@ q {
     gap: 13px;
     margin-bottom: 25px;
     padding-bottom: 18px;
+  }
+
+  .thesis-content {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
